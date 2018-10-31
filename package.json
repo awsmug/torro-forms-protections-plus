@@ -1,0 +1,55 @@
+{
+  "name": "torro-forms-protections-plus",
+  "version": "1.0.0",
+  "description": "Additional Protectors (Anti-Spam) for Torro Forms.",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "extension",
+    "torro forms",
+    "forms",
+    "form builder",
+    "anti-spam",
+    "spam"
+  ],
+  "author": {
+    "name": "Awesome UG",
+    "email": "support@awesome.ug",
+    "url": "https://awesome.ug"
+  },
+  "contributors": [
+    {
+      "name": "Sven Wagener",
+      "email": "support@awesome.ug",
+      "url": "https://awesome.ug"
+    }
+  ],
+  "homepage": "https://torro-forms.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/awsmug/torro-forms-protections-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/awsmug/torro-forms-protections-plus/issues"
+  },
+  "license": "GPL-2.0-or-later",
+  "engines": {
+    "node": ">= 6.9.4"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-banner": "~0.1.3",
+    "gulp-concat": "~2.6.1",
+    "gulp-csscomb": "~3.0.8",
+    "gulp-jscs": "~4.0.0",
+    "gulp-jshint": "~2.0.4",
+    "gulp-clean-css": "~2.3.2",
+    "gulp-rename": "~1.2.2",
+    "gulp-replace": "~0.5.4",
+    "gulp-sass": "~3.1.0",
+    "gulp-uglify": "~2.0.1",
+    "gulp-sort": "~2.0.0",
+    "gulp-wp-pot": "~2.0.6",
+    "jshint": "~2.9.4"
+  }
+}
