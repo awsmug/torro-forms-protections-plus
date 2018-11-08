@@ -1,0 +1,94 @@
+# Copyright (C) 2018 torro-forms-protectors-plus
+# This file is distributed under the same license as the torro-forms-protectors-plus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: torro-forms-protectors-plus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Torro Forms Protectors Plus 0.1.0\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"report-msgid-bugs-to: https://translate.wordpress.org/projects/wp-plugins/torro-forms\n"
+"x-generator: gulp-wp-pot\n"
+"x-poedit-basepath: .\n"
+"x-poedit-bookmars: \n"
+"x-poedit-country: UNITED STATES\n"
+"x-poedit-keywordslist: __;_e;_x:1,2c;_ex:1,2c;_n:1,2; _nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__; esc_html__;esc_attr_e; esc_html_e;esc_attr_x:1,2c; esc_html_x:1,2c;\n"
+"x-poedit-language: English\n"
+"x-poedit-searchpath-0: .\n"
+"x-poedit-sourcecharset: uft-8\n"
+"x-textdomain-support: yes\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/src/protectors/mathematics.php:30
+msgid "Mathematic"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:52
+msgid "Missing mathematics question input. Please check the question to verify you are human."
+msgstr ""
+
+#: src/src/protectors/mathematics.php:60
+msgid "Answer on mathematics question is wrong. Please check the question to verify you are human."
+msgstr ""
+
+#: src/src/protectors/mathematics.php:74, src/src/protectors/mathematics.php:173
+msgctxt "Mathematics task"
+msgid "Are you a human? Solve this:"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:104
+msgid "+"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:107
+msgid "-"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:110
+msgid "*"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:113
+msgid "/"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:166
+msgctxt "protector"
+msgid "Add mathematics task at the end of the form."
+msgstr ""
+
+#: src/src/protectors/mathematics.php:167
+msgctxt "protector"
+msgid "Mathematics task"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:172
+msgctxt "Mathematics task"
+msgid "Text"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:178
+msgctxt "Mathematics task"
+msgid "Type"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:180
+msgctxt "Mathematics task type"
+msgid "Add (+)"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:181
+msgctxt "Mathematics task type"
+msgid "Subtract (-)"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:182
+msgctxt "Mathematics task type"
+msgid "Multiply (*)"
+msgstr ""
+
+#: src/src/protectors/mathematics.php:183
+msgctxt "Mathematics task type"
+msgid "Divide (/)"
+msgstr ""

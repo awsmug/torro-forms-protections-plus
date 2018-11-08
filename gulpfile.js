@@ -22,7 +22,7 @@ const config = {
 	license: 'GNU General Public License v2 (or later)',
 	licenseURI: 'http://www.gnu.org/licenses/gpl-2.0.html',
 	tags: parseKeywords( pkg.keywords ).join( ', ' ),
-	contributors: [ 'mahype', 'flixos90', 'awesome-ug' ].join( ', ' ),
+	contributors: [ 'mahype', 'awesome-ug' ].join( ', ' ),
 	donateLink: false,
 	minRequired: '4.8',
 	testedUpTo: '4.9',
@@ -89,17 +89,17 @@ const wpPot    = require( 'gulp-wp-pot' );
 
 const paths = {
 	php: {
-		files: [ './*.php', './src/**/*.php', './templates/**/*.php' ]
+		files: [ './src/*.php', './src/src/**/*.php', './src/templates/**/*.php' ]
 	},
 	sass: {
-		files: [ './assets/src/sass/*.scss' ],
-		src: './assets/src/sass/',
-		dst: './assets/dist/css/'
+		files: [ './src/assets/src/sass/*.scss' ],
+		src: './src/assets/src/sass/',
+		dst: './src/assets/dist/css/'
 	},
 	js: {
-		files: [ './assets/src/js/*.js' ],
-		src: './assets/src/js/',
-		dst: './assets/dist/js/'
+		files: [ './src/assets/src/js/*.js' ],
+		src: './src/assets/src/js/',
+		dst: './src/assets/dist/js/'
 	}
 };
 
@@ -148,8 +148,6 @@ gulp.task( 'js', done => {
 	gulp.src( paths.js.files )
 		.pipe( jshint() )
 		.pipe( jshint.reporter( 'default' ) )
-		.pipe( jscs() )
-		.pipe( jscs.reporter() )
 		.pipe( banner( assetheader ) )
 		.pipe( gulp.dest( paths.js.dst ) )
 		.pipe( uglify() )
@@ -164,9 +162,9 @@ gulp.task( 'js', done => {
 // generate POT file
 gulp.task( 'pot', done => {
 	gulp.src([
-		'./*.php',
-		'./src/**/*.php',
-		'./templates/**/*.php',
+		'./src/*.php',
+		'./src/src/**/*.php',
+		'./src/templates/**/*.php',
 	])
 		.pipe( sort() )
 		.pipe( wpPot({
@@ -185,13 +183,13 @@ gulp.task( 'pot', done => {
 				'x-textdomain-support': 'yes',
 			},
 		}) )
-		.pipe( gulp.dest( './languages/' + config.textDomain + '.pot' ) )
+		.pipe( gulp.dest( './src/languages/' + config.textDomain + '.pot' ) )
 		.on( 'end', done );
 });
 
 // replace the plugin header in the main plugin file
 gulp.task( 'header-replace', done => {
-	gulp.src( './' + config.pluginSlug + '.php' )
+	gulp.src( './src/' + config.pluginSlug + '.php' )
 		.pipe( replace( /(?:\s\*\s@wordpress-plugin\s(?:[^*]|(?:\*+[^*\/]))*\*+\/)/, ' * @wordpress-plugin\n' + pluginheader + '\n */' ) )
 		.pipe( gulp.dest( './' ) )
 		.on( 'end', done );
@@ -199,7 +197,7 @@ gulp.task( 'header-replace', done => {
 
 // replace the plugin header in readme.txt
 gulp.task( 'readme-replace', done => {
-	gulp.src( './readme.txt' )
+	gulp.src( './src/readme.txt' )
 		.pipe( replace( /\=\=\= (.+) \=\=\=([\s\S]+)\=\= Description \=\=/m, '=== ' + config.pluginName + ' ===\n\n' + readmeheader + '\n\n' + config.description + '\n\n== Description ==' ) )
 		.pipe( gulp.dest( './' ) )
 		.on( 'end', done );
