@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <ruleset
-	name="Torro Forms Protections Plus PHPMD Rules"
+	name="Torro Forms Protectors Plus PHPMD Rules"
 	xmlns="http://pmd.sf.net/ruleset/1.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
 	xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd"
 	>
-	<description>A custom set of PHPMD rules for Torro Forms Protections Plus.</description>
+	<description>A custom set of PHPMD rules for Torro Forms Protectors Plus.</description>
 
 	<rule ref="rulesets/cleancode.xml">
 		<exclude name="BooleanArgumentFlag" />

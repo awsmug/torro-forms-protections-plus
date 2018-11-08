@@ -10,9 +10,9 @@ function parseKeywords( keywords ) {
 }
 
 const config = {
-	pluginSlug: 'torro-forms-protections-plus',
-	pluginName: 'Torro Forms Protections Plus',
-	textDomain: 'torro-forms-protections-plus',
+	pluginSlug: 'torro-forms-protectors-plus',
+	pluginName: 'Torro Forms Protectors Plus',
+	textDomain: 'torro-forms-protectors-plus',
 	domainPath: '/languages/',
 	pluginURI: pkg.homepage,
 	author: pkg.author.name,

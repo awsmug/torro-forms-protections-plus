@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<ruleset name="Torro Forms Protections Plus PHPCS Rules">
-	<description>A custom set of PHPCS rules for Torro Forms Protections Plus.</description>
+<ruleset name="Torro Forms Protectors Plus PHPCS Rules">
+	<description>A custom set of PHPCS rules for Torro Forms Protectors Plus.</description>
 
-	<file>./torro-forms-protections-plus.php</file>
+	<file>./torro-forms-protectors-plus.php</file>
 	<file>./src</file>
 
 	<exclude-pattern>*/src/translations/*</exclude-pattern>
@@ -26,7 +26,7 @@
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="string" value="torro-forms-protections-plus"/>
+			<property name="text_domain" type="string" value="torro-forms-protectors-plus"/>
 		</properties>
 	</rule>
 

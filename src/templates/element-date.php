@@ -4,7 +4,7 @@
  *
  * Available data: $id, $container_id, $label, $sort, $type, $value, $input_attrs, $label_required, $label_attrs, $wrap_attrs, $description, $description_attrs, $errors, $errors_attrs, $before, $after, $date_fields_order, $date_choices, $date_labels, $date_values, $legend_attrs
  *
- * @package TorroFormsProtectionsPlus
+ * @package TorroFormsProtectorsPlus
  * @since 1.0.0
  */
 

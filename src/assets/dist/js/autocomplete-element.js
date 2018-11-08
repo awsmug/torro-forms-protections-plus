@@ -1,5 +1,5 @@
 /*!
- * Torro Forms Protections Plus Version 1.0.0 (https://torro-forms.com)
+ * Torro Forms Protectors Plus Version 1.0.0 (https://torro-forms.com)
  * Licensed under GNU General Public License v2 (or later) (http://www.gnu.org/licenses/gpl-2.0.html)
  */
 (function( $, scriptData ) {

@@ -1,5 +1,5 @@
 {
-  "name": "torro-forms-protections-plus",
+  "name": "torro-forms-protectors-plus",
   "version": "1.0.0",
   "description": "Additional Protectors (Anti-Spam) for Torro Forms.",
   "keywords": [
@@ -27,10 +27,10 @@
   "homepage": "https://torro-forms.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/awsmug/torro-forms-protections-plus.git"
+    "url": "git://github.com/awsmug/torro-forms-protectors-plus.git"
   },
   "bugs": {
-    "url": "https://github.com/awsmug/torro-forms-protections-plus/issues"
+    "url": "https://github.com/awsmug/torro-forms-protectors-plus/issues"
   },
   "license": "GPL-2.0-or-later",
   "engines": {
