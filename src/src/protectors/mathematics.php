@@ -49,7 +49,7 @@ class Mathematics extends Protector { // @codingStandardsIgnoreLine
 		$entered = (float) $math['result'];
 
 		 if ( empty( $entered ) ) { // phpcs:ignore WordPress.Security
-			 return new WP_Error( 'protector_mathematics_missing_input', __( 'Missing mathematics question input. Please check the question to verify you are human.', 'torro-forms-protectors-plus' ) );
+			 return new WP_Error( 'protector_mathematics_missing_input', __( 'Missing answer to last question. Please check the question to verify you are human.', 'torro-forms-protectors-plus' ) );
 		 }
 
 		$type  = $this->get_form_option( $form->id, 'type', 'add' );
@@ -57,7 +57,7 @@ class Mathematics extends Protector { // @codingStandardsIgnoreLine
 		$expected = $this->calculate( $num_1, $num_2, $type );
 
 		if ( $expected !== $entered ) {
-			return new WP_Error( 'protector_mathematics_wrong_entered', __( 'Answer on mathematics question is wrong. Please check the question to verify you are human.', 'torro-forms-protectors-plus' ) );
+			return new WP_Error( 'protector_mathematics_wrong_entered', __( 'Answer on last question is wrong. Please check the question to verify you are human.', 'torro-forms-protectors-plus' ) );
 		}
 
 		return true;
