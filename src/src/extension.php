@@ -10,6 +10,8 @@ namespace awsmug\TorroFormsProtectorsPlus;
 
 use awsmug\Torro_Forms\Components\Extension as Extension_Base;
 use awsmug\TorroFormsProtectorsPlus\Protectors\Mathematics;
+use awsmug\TorroFormsProtectorsPlus\Protectors\Q_A;
+use awsmug\TorroFormsProtectorsPlus\Protectors\Question_Answer;
 use Leaves_And_Love\Plugin_Lib\Assets;
 use WP_Error;
 
@@ -77,6 +79,7 @@ class Extension extends Extension_Base {
 	 */
 	public function register_protectors( $module ) {
 		$module->register( 'mathematic', Mathematics::class );
+		$module->register( 'question-answer', Question_Answer::class );
 	}
 
 	/**
@@ -94,20 +97,5 @@ class Extension extends Extension_Base {
 			'priority' => 10,
 			'num_args' => 1,
 		);
-	}
-
-	/**
-	 * Checks whether the dependencies have been loaded.
-	 *
-	 * If this method returns false, the extension will attempt to require the composer-generated
-	 * autoloader script. If your extension uses additional dependencies, override this method with
-	 * a check whether these dependencies already exist.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return bool True if the dependencies are loaded, false otherwise.
-	 */
-	protected function dependencies_loaded() {
-		return class_exists( 'APIAPI\Structure_WordPress\Structure_WordPress' );
 	}
 }
