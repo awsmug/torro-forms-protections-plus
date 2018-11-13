@@ -1,7 +1,7 @@
 {
   "name": "awsmug/torro-forms-protectors-plus",
   "description": "Additional Protectors (Anti-Spam) for Torro Forms.",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "license": "GPL-2.0-or-later",
   "type": "wordpress-plugin",
   "keywords": [

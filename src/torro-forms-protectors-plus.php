@@ -9,7 +9,7 @@
  * Plugin Name: Torro Forms Protectors Plus
  * Plugin URI:  https://torro-forms.com
  * Description: Additional Torro Forms protectors.
- * Version:     0.1.0
+ * Version:     0.2.0
  * Author:      Awesome UG
  * Author URI:  https://awesome.ug
  * License:     GNU General Public License v2 (or later)
